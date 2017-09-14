@@ -38,7 +38,13 @@ header h1{
 .seccion-creditos{
   margin: 0 auto;
   width: 90%;
-  display: flex;
+  display: -webkit-box;   /* OLD: Safari,  iOS, Android browser, older WebKit browsers.  */
+  display: -moz-box;      /* OLD: Firefox (buggy) */
+  display: -o-box;
+  display: -ms-flexbox;   /* MID: IE 10 */
+  display: -webkit-flex;  /* NEW, Chrome 21+ */
+  display: flex;          /* NEW: Opera 12.1, Firefox 22+ */
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   justify-content: center;
  }
@@ -96,13 +102,45 @@ footer{
   margin-bottom: 10px;
 
 }
+@media only screen and (max-width: 768px){
+  header h1{
+    padding-left: 30px;
+  }
+  .contenedor{
+    max-width: 768px;
+  }
+  .seccion-creditos{
+    flex-direction: column;
+  }
+  footer{
+    height: 180px;
+  }
+
+}
 
 @media only screen and (max-width: 414px){
-
+  .contenedor{
+    max-width: 414px;
+  }
+  footer{
+    height: 100px;
+  }
 }
 
 @media only screen and (max-width: 320px){
   .contenedor{
     max-width: 320px;
+  }
+
+  .seccion-creditos div a img {
+    width: 200px;
+  }
+
+  .seccion-textos{
+    width: 90%;
+  }
+
+  footer{
+    height: 70px;
   }
 }
