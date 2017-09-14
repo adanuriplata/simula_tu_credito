@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#27469e+6,5f2370+31,a2003d+76,a80077+99,c146a1+99,c146a1+100,c146a1+100 */
+  background: #27469e; /* Old browsers */
+  background: -moz-linear-gradient(left,  #27469e 6%, #5f2370 31%, #a2003d 76%, #a80077 99%, #c146a1 99%, #c146a1 100%, #c146a1 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  #27469e 6%,#5f2370 31%,#a2003d 76%,#a80077 99%,#c146a1 99%,#c146a1 100%,#c146a1 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  #27469e 6%,#5f2370 31%,#a2003d 76%,#a80077 99%,#c146a1 99%,#c146a1 100%,#c146a1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#27469e', endColorstr='#c146a1',GradientType=1 ); /* IE6-9 */
+
+}
+a{
+  text-decoration: none;
+}
+.contenedor{
+  font-family: 'Source Sans Pro', sans-serif;
+  max-width: 900px;
+  width: 70%;
+  margin: 10px auto;
+  -ms-display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+}
+
+.mensaje{
+  background: rgba(0, 0, 0, 0.5);
+  padding: 50px 80px;
+  font-size: 1.2em;
+}
+
+.mensaje h1{
+  font-family: 'Oleo Script', cursive;
+  font-size: 2.5em;
+  color: rgba(238, 242, 28, 0.95);
+  text-shadow: 2px 2px black;
+  padding-bottom: 20px;
+}
+
+.conoce{
+  padding: 30px 10px;
+}
+
+.imagen{
+  padding-top: 30px;
+}
+
+.mensaje .imagen img{
+  max-width: 50%;
+}
+
+.conoce .titulo{
+  font-size: 1.4em;
+}
+
+.conoce .parrafo{
+  font-size: 1em;
+}
+
+.boton {
+  text-align: center;
+  max-width: 200px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.boton a{
+  color: black;
+  padding: 10px 55px;
+  background: green;
+  border-radius: 5px;
+}
+.boton:hover{
+	transform: scale(1.1);
+}
